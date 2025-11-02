@@ -16,7 +16,7 @@ set.seed(0112358)
 pacman::p_load(here, tidymodels, tidyverse, modeltime, timetk, tictoc)
 
 # load data ----------------
-df_train_test <- read.csv(here("Data", "df-train-test-sf.csv")) |> mutate(date = as.Date(date))
+df_train_test <- read.csv(here("data", "df-train-test-sf.csv")) |> mutate(date = as.Date(date))
 
 # plit data into training and test sets -------------------------------------
 set.seed(0112358)
